@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJGrabber</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="cjgrabberstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...snip..."/>
+  <script src="cjgrabber.js"></script>
+</head>
+
+<body>
+  <div class="cube1container">
+    <div class="cube1">
+      <div class="front"></div>
+      <div class="back"></div>
+      <div class="right"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-blur bg-blur">
+        <a class="navbar-brand" href="#">Get Your Template In Seconds</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="cube2container">
+    <div class="cube2">
+      <div class="front"></div>
+      <div class="back"></div>
+      <div class="right"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" style="display: flex;">
+    <div class="header-container" style="width: 100%; padding-left: 0px;">
+      <div class="header-content">
+        <h1 class="header-title">OptiMark</h1>
+        <p class="header-subtitle">Your Visionary Solution for Seamless Mark Recognition</p>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Projects -->
+  <div class="container2">
+    <nav>
+      <ul>
+        <li><a href="#OptiMark-setup-exe-file">OptiMark setup exe file</a></li>
+      </ul>
+    </nav>
+    <div class="snap-scroll">
+
+
+      <div id="OptiMark-setup-exe-file" class="scroll-item">
+        <!-- Add content for image  Downloader here -->
+        <h2>OptiMark setup exe file</h2>
+        <div class="download-form">
+            <h1 class="templateDownloader">OptiMark Windows</h1>
+            <div style="text-align: center;">
+              <img src="OptiMarkScreen.png" alt="Image" class="template-image" style="max-width: 1000px;">
+            </div>
+            <button type="submit" class="download-btn" onclick="downloadPDF('OptiMark_WINDOWS_1.5_setup.exe')">Download</button>
+          </div>
+        <div class="download-result">
+          <!-- This is where the download result will display -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function downloadPDF(filePath) {
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = filePath.substring(filePath.lastIndexOf('/') + 1);
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+  </script>
+  
+
+
+    <!-- About -->
+<section id="about-sec" class="about">
+  <div class="about-container">
+    <h2 class="about-title">About OptiMark</h2>
+    <p class="about-text">Are you tired of the mind-numbing task of manually grading answer sheets? Do you yearn for a magical solution that can save you from the never-ending stacks of papers? Look no further, because OptiMark is here to turn your grading nightmares into a breeze of pure delight!
+
+OptiMark, the brainchild of a genius with a touch of madness, is not your ordinary answer sheet checker. No, it's an eccentric masterpiece that combines Computer Vision, a sprinkle of quirkiness, and a dash of secret sauce to revolutionize the way you assess your students' performance.</p>
+  </div>
+  <div class="skills-container">
+    <h2 class="about-title">Mastering the Visionary Toolkit</h2>
+    <p class="about-text">Computer Vision | Python | OpenCV-Python | NumPy | PyQt5 | Qt Designer</p>
+  </div>
+</section>
+<!-- Footer -->
+<footer id="footer-sec" class="footer">
+  <div class="footer-container">
+    <ul class="footer-links">
+      <li>
+        <a href="https://www.facebook.com/Call_me_CARLO_or_Jead/" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <p>Carlojead Emol Amaquin</p>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/mr._cj_ams/" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <p>mr._cj_ams</p>
+      </li>
+      <li>
+        <a href="mailto:ubshsgr12stemamaquinc@gmail.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <p>ubshsgr12stemamaquinc@gmail.com</p>
+      </li>
+    </ul>
+    <p>© 2023 Carlojead E. Amaquin. All Rights Reserved.</p>
+  </div>
+</footer> 
+</body>
+</html>
